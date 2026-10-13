@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#082d24">
+
+  <title>Sabor Criollo | Cocina peruana</title>
+
+  <meta
+    name="description"
+    content="Descubre los sabores de la cocina peruana en Sabor Criollo. Explora nuestra carta y realiza tus pedidos por WhatsApp."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header class="navbar" id="inicio">
+    <div class="nav-container">
+
+      <a href="#inicio" class="brand" aria-label="Sabor Criollo, inicio">
+        <span class="brand-symbol">SC</span>
+
+        <span class="brand-text">
+          <strong>Sabor Criollo</strong>
+          <small>COCINA PERUANA</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#carta" class="nav-link">Nuestra carta</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#carta" class="nav-cta">Ver platos <span>↗</span></a>
+      </nav>
+
+      <button
+        class="mobile-menu"
+        id="mobile-menu"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- PORTADA -->
+  <main>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+
+          <div class="eyebrow hero-eyebrow">
+            <span></span>
+            EL SABOR DE NUESTRA TIERRA
+          </div>
+
+          <h1>
+            Tradición peruana,<br>
+            <em>hecha con amor.</em>
+          </h1>
+
+          <p>
+            Recetas que nos conectan con nuestras raíces.
+            Descubre tus favoritos y disfruta cada bocado.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#carta" class="button button-gold">
+              Explorar la carta <span>→</span>
+            </a>
+
+            <a href="#nosotros" class="button button-outline">
+              Nuestra historia
+            </a>
+          </div>
+
+        </div>
+
+        <div class="hero-note" aria-hidden="true">
+          Comida<br>que une
+          <span>♡</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="intro-section" id="nosotros">
+      <div class="intro-container">
+
+        <div class="intro-heading">
+          <div class="eyebrow">
+            <span></span>
+            DE NUESTRA COCINA A TU MESA
+          </div>
+
+          <h2>
+            Los sabores que<br>
+            <em>siempre vuelven.</em>
+          </h2>
+        </div>
+
+        <div class="intro-description">
+          <p>
+            Celebramos la riqueza de la gastronomía peruana
+            con platos llenos de sabor. Explora nuestra carta
+            y encuentra tu próximo favorito.
+          </p>
+
+          <div class="intro-details">
+            <span>♡</span>
+            Preparado para disfrutar
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CARTA -->
+    <section class="menu-section" id="carta">
+      <div class="menu-container">
+
+        <div class="menu-heading">
+
+          <div class="menu-title">
+            <div class="eyebrow">
+              <span></span>
+              NUESTRO MENÚ
+            </div>
+
+            <h2>Hechos para <em>disfrutar</em></h2>
+            <p class="menu-subtitle">
+              Descubre los favoritos de nuestra cocina.
+            </p>
+          </div>
+
+          <div class="menu-filters" aria-label="Filtrar platos">
+            <button
+              type="button"
+              class="filter-button active"
+              data-category="todos"
+              aria-pressed="true"
+            >
+              Todos los platos
+            </button>
+
+            <button
+              type="button"
+              class="filter-button"
+              data-category="criollos"
+              aria-pressed="false"
+            >
+              Criollos
+            </button>
+
+            <button
+              type="button"
+              class="filter-button"
+              data-category="marinos"
+              aria-pressed="false"
+            >
+              Marinos
+            </button>
+
+            <button
+              type="button"
+              class="filter-button"
+              data-category="entradas"
+              aria-pressed="false"
+            >
+              Entradas
+            </button>
+          </div>
+
+          <div class="menu-count">
+            <strong>06</strong>
+            <span>ESPECIALIDADES</span>
+          </div>
+
+        </div>
+
+
+        <!-- TARJETAS DE PLATOS -->
+        <div class="product-grid">
+
+          <!-- AJÍ DE GALLINA -->
+          <article class="product-card" data-category="criollos">
+            <div class="product-image">
+              <img
+                src="images/aji-de-gallina.jpg"
+                alt="Ají de gallina peruano con arroz, huevo y aceituna"
+                loading="lazy"
+              >
+              <span class="product-tag">CRIOLLOS</span>
+            </div>
+
+            <div class="product-info">
+              <h3>Ají de gallina</h3>
+              <p>
+                Cremoso guiso de pollo en salsa de ají amarillo,
+                acompañado de arroz y huevo.
+              </p>
+
+              <div class="product-bottom">
+                <span class="product-price">S/ 16.00</span>
+
+                <button
+                  type="button"
+                  class="order-button"
+                  data-product="Ají de gallina"
+                  data-price="16.00"
+                >
+                  <span class="whatsapp-icon">◉</span>
+                  Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- LOMO SALTADO -->
+          <article class="product-card" data-category="criollos">
+            <div class="product-image">
+              <img
+                src="images/lomo-saltado.jpg"
+                alt="Lomo saltado peruano con cebolla, tomate, arroz y papas fritas"
+                loading="lazy"
+              >
+              <span class="product-tag">CRIOLLOS</span>
+            </div>
+
+            <div class="product-info">
+              <h3>Lomo saltado</h3>
+              <p>
+                Trozos de res salteados con cebolla, tomate
+                y papas fritas, acompañados de arroz.
+              </p>
+
+              <div class="product-bottom">
+                <span class="product-price">S/ 22.00</span>
+
+                <button
+                  type="button"
+                  class="order-button"
+                  data-product="Lomo saltado"
+                  data-price="22.00"
+                >
+                  <span class="whatsapp-icon">◉</span>
+                  Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- CEVICHE -->
+          <article class="product-card" data-category="marinos">
+            <div class="product-image">
+              <img
+                src="images/ceviche.jpg"
+                alt="Ceviche peruano con pescado, limón, cebolla y camote"
+                loading="lazy"
+              >
+              <span class="product-tag tag-marine">MARINOS</span>
+            </div>
+
+            <div class="product-info">
+              <h3>Ceviche clásico</h3>
+              <p>
+                Pescado marinado en limón, con cebolla roja,
+                camote y choclo.
+              </p>
+
+              <div class="product-bottom">
+                <span class="product-price">S/ 28.00</span>
+
+                <button
+                  type="button"
+                  class="order-button"
+                  data-product="Ceviche clásico"
+                  data-price="28.00"
+                >
+                  <span class="whatsapp-icon">◉</span>
+                  Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PAPA A LA HUANCAÍNA -->
+          <article class="product-card" data-category="entradas">
+            <div class="product-image">
+              <img
+                src="images/papa-huancaina.jpg"
+                alt="Papa a la huancaína con salsa de ají amarillo, huevo y aceituna"
+                loading="lazy"
+              >
+              <span class="product-tag tag-starter">ENTRADAS</span>
+            </div>
+
+            <div class="product-info">
+              <h3>Papa a la huancaína</h3>
+              <p>
+                Papas suaves con cremosa salsa de ají amarillo,
+                huevo y aceituna.
+              </p>
+
+              <div class="product-bottom">
+                <span class="product-price">S/ 12.00</span>
+
+                <button
+                  type="button"
+                  class="order-button"
+                  data-product="Papa a la huancaína"
+                  data-price="12.00"
+                >
+                  <span class="whatsapp-icon">◉</span>
+                  Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ARROZ CON MARISCOS -->
+          <article class="product-card" data-category="marinos">
+            <div class="product-image">
+              <img
+                src="images/arroz-mariscos.jpg"
+                alt="Arroz con mariscos peruano con camarones y calamares"
+                loading="lazy"
+              >
+              <span class="product-tag tag-marine">MARINOS</span>
+            </div>
+
+            <div class="product-info">
+              <h3>Arroz con mariscos</h3>
+              <p>
+                Arroz sazonado con camarones, calamares
+                y otros mariscos.
+              </p>
+
+              <div class="product-bottom">
+                <span class="product-price">S/ 26.00</span>
+
+                <button
+                  type="button"
+                  class="order-button"
+                  data-product="Arroz con mariscos"
+                  data-price="26.00"
+                >
+                  <span class="whatsapp-icon">◉</span>
+                  Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- CAUSA LIMEÑA -->
+          <article class="product-card" data-category="entradas">
+            <div class="product-image">
+              <img
+                src="images/causa-limena.jpg"
+                alt="Causa limeña de papa amarilla rellena y decorada"
+                loading="lazy"
+              >
+              <span class="product-tag tag-starter">ENTRADAS</span>
+            </div>
+
+            <div class="product-info">
+              <h3>Causa limeña</h3>
+              <p>
+                Papa amarilla rellena de atún, palta
+                y mayonesa, un clásico peruano.
+              </p>
+
+              <div class="product-bottom">
+                <span class="product-price">S/ 14.00</span>
+
+                <button
+                  type="button"
+                  class="order-button"
+                  data-product="Causa limeña"
+                  data-price="14.00"
+                >
+                  <span class="whatsapp-icon">◉</span>
+                  Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu-note">
+          * Precios referenciales para esta demostración.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- LLAMADA A LA ACCIÓN -->
+    <section class="contact-banner">
+      <div class="contact-container">
+
+        <div class="contact-icon" aria-hidden="true">
+          <span>✆</span>
+        </div>
+
+        <div class="contact-copy">
+          <span class="contact-eyebrow">ESTAMOS PARA ATENDERTE</span>
+          <h2>¿Se te antojó algo?</h2>
+          <p>
+            Escríbenos y consulta la disponibilidad
+            de tus platos favoritos.
+          </p>
+        </div>
+
+        <button type="button" class="contact-button" id="contact-button">
+          <span class="whatsapp-icon">◉</span>
+          Consultar por WhatsApp <span>→</span>
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <a href="#inicio" class="brand footer-brand">
+        <span class="brand-symbol">SC</span>
+
+        <span class="brand-text">
+          <strong>Sabor Criollo</strong>
+          <small>COCINA PERUANA</small>
+        </span>
+      </a>
+
+      <div class="footer-detail">
+        <span class="footer-detail-icon">⌖</span>
+        <div>
+          <strong>Encuéntranos</strong>
+          <span>Av. Principal 123</span>
+          <span>Tu ciudad, Perú</span>
+        </div>
+      </div>
+
+      <div class="footer-detail">
+        <span class="footer-detail-icon">◷</span>
+        <div>
+          <strong>Horario de atención</strong>
+          <span>Lun - Dom</span>
+          <span>11:00 a. m. - 10:00 p. m.</span>
+        </div>
+      </div>
+
+      <a href="#inicio" class="back-to-top">
+        Volver arriba ↑
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="year">2026</span> Sabor Criollo.
+        Todos los derechos reservados.
+      </p>
+      <span>Hecho con ♥ y sabor peruano</span>
+    </div>
+  </footer>
+
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <button
+    type="button"
+    class="floating-whatsapp"
+    id="floating-whatsapp"
+    aria-label="Consultar por WhatsApp"
+    title="Consultar por WhatsApp"
+  >
+    <span>✆</span>
+  </button>
+
+
+  <!-- MENSAJE SI UNA IMAGEN NO CARGA -->
+  <script>
+    document.querySelectorAll(".product-image img").forEach((imagen) => {
+      imagen.addEventListener("error", () => {
+        imagen.parentElement.classList.add("image-missing");
+        imagen.alt = "Fotografía del plato próximamente disponible";
+      });
+    });
+
+    // Menú móvil
+    const menuButton = document.querySelector("#mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", () => {
+      const abierto = navLinks.classList.toggle("nav-open");
+      menuButton.setAttribute("aria-expanded", String(abierto));
+    });
+
+    navLinks.querySelectorAll("a").forEach((enlace) => {
+      enlace.addEventListener("click", () => {
+        navLinks.classList.remove("nav-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+
+</body>
+</html>
